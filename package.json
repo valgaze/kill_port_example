@@ -1,0 +1,17 @@
+{
+  "name": "kill_port_example",
+  "version": "1.0.0",
+  "description": "Starter repo to see what's running on a particular port and how to stop it",
+  "main": "server1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server1.js &",
+    "boot_server2":"node server2.js",
+    "cleanup":"chmod +x ./cleanup.sh && ./cleanup.sh $npm_package_config_port"
+  },
+  "author": "",
+  "license": "ISC",
+  "config":{
+    "port":8000
+  }
+}
